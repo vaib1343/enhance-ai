@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <style>
+            .custom-text-gradient {
+                font-family: 'Inter';
+                font-style: normal;
+                font-size: 72px;
+                line-height: 87px;
+                text-align: center;
+                letter-spacing: -0.025em;
+
+                background: linear-gradient(90deg, #3ed6bb 14.46%, #785dfc 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+            }
+            .custom-text-gradient > span {
+                font-weight: 700;
+            }
+
+            .get-started-btn {
+                background: linear-gradient(90deg, #2ac4a0 0%, #6c77ef 100%);
+                border-radius: 18.9796px;
+            }
+
+            .explain-container {
+                background: #ffffff;
+                box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.12);
+                border-radius: 25px;
+            }
+        </style>
+        <div class="border-b border-gray-300 py-4">
+            <div class="container mx-auto flex items-center justify-around relative">
+                <img class="absolute -top-5 -left-14" src="./Group 4.svg" alt="" />
+                <img src="./Group 32.svg" alt="" width="291" />
+                <nav>
+                    <ul class="flex">
+                        <li><a class="mr-2 py-3 px-4 bg-gradient-to-r from-[#27C4A7] to-[#4BBF49] transition hover:bg-gray-200 rounded-md font-medium text-white" href="">Home</a></li>
+                        <li><a class="py-2 px-4 transition hover:bg-gray-200 rounded-md font-medium" href="">Pricing</a></li>
+                        <li><a class="py-2 px-4 transition hover:bg-gray-200 rounded-md font-medium" href="">Contact</a></li>
+                        <li><a class="py-2 px-4 transition hover:bg-gray-200 rounded-md font-medium" href="">Features</a></li>
+                        <li><a class="py-2 px-4 transition hover:bg-gray-200 rounded-md font-medium" href="">Login</a></li>
+                        <li>
+                            <a class="z-auto ml-2 py-3 px-4 transition bg-gradient-to-r from-[#795FFD] to-[#3518C9] text-white rounded-md" href=""><img class="inline mr-2" src="./Vector.svg" alt="" /> Free Signup</a>
+                        </li>
+                    </ul>
+                </nav>
+                <img class="absolute -right-12 -top-4" src="./Group 3.svg" alt="" />
+            </div>
+        </div>
+        <section>
+            <div class="container m-auto relative text-center">
+                <img class="absolute -right-2 -top-8" src="./Group 6.svg" alt="" />
+                <h1 class="custom-text-gradient text-center text-6xl mt-[72px] bold-700 ng-gradient"><span>AI</span> to write code, blogs & more</h1>
+                <p class="text-center mt-5 text-slate-500">
+                    Enhance everything you do by using the latest from OpenAI to solve problems, <br />
+                    write solutions and make life easier.
+                </p>
+                <button class="get-started-btn py-3 px-10 text-white mt-5">Get Started</button>
+            </div>
+            <div class="explain-container max-w-[1177px] m-auto -mb-[6rem] relative mt-10 z-50 flex">
+                <div class="basis-1/2 border-r border-gray-300 py-4 px-8">
+                    <h3 class="text-[2rem]"><img class="inline" src="./message.svg" alt="" /> Explain Code</h3>
+                    <p class="text-slate-400 mt-2">Explain some code based on the syntax provided</p>
+                    <p class="mt-8">Paste your code below:</p>
+                    <img class="mt-2" src="./code.svg" alt="" />
+                    <button class="mt-8 bg-gradient-to-r from-[#795FFD] to-[#3518C9] text-white py-3 px-5 rounded-xl"><img class="inline" src="./enhance.svg" alt="" /> Enhance with AI</button>
+                </div>
+                <div class="basis-1/2 py-4 px-8">
+                    <h3 class="text-[1.5rem]"><img class="inline mr-3" src="./blackArrow.svg" alt="" /> What does this code do?</h3>
+                    <p class="text-slate-500 mt-2">The following code does:</p>
+                    <ul class="mt-3">
+                        <li class="border-b border-slate-200 py-3 flex">
+                            <img class="mr-3" src="./grayArrow.svg" alt="" />
+                            <p>The code above is a function definition.</p>
+                        </li>
+                        <li class="border-b border-slate-200 py-3 flex">
+                            <img class="mr-3" src="./grayArrow.svg" alt="" />
+                            <p>It defines a new function called `HelloWorld` that takes a single argument called `text`</p>
+                        </li>
+                        <li class="py-3 flex">
+                            <img class="mr-3" src="./grayArrow.svg" alt="" />
+                            <p>The body of the function is a single line of code that prints out the value of `text` if it is defined, or `Hello World` if it is not defined.</p>
+                        </li>
+                    </ul>
+                    <button class="bg-slate-200 text-slate-500 rounded-xl mt-3 py-2 px-3"><img class="inline" src="./copy.svg" alt="" /> Copy Output</button>
+                    <img class="mt-2 m-auto" src="./disable.svg" alt="" />
+                </div>
+            </div>
+            <div class="bg-gradient-to-r from-[#785EFD] to-[#371BCB] pt-[8rem] relative pb-10">
+                <img class="absolute -top-[12rem]" src="./circles.svg" alt="" />
+                <img class="absolute top-[31rem] left-[2rem]" src="./dotbg.svg" alt="" />
+                <img class="absolute top-[12rem] right-[1rem]" src="./circletrangle.svg" alt="" />
+
+                <div class="max-w-[1177px] m-auto">
+                    <div class="flex flex-wrap m-auto justify-between items-start">
+                        <div>
+                            <button class="bg-white text-[#381BCB] py-3 px-8 rounded-xl"><img class="inline mr-2" src="./messageblue.svg" alt="" /> Explain Code</button>
+                            <p class="text-[#A998FF] mt-2">Examples of AI for Programming</p>
+                        </div>
+                        <button class="bg-white opacity-50 text-[#381BCB] py-3 px-8 rounded-xl"><img class="inline mr-2" src="./regex.svg" alt="" /> Regex</button>
+                        <button class="bg-white opacity-50 text-[#381BCB] py-3 px-8 rounded-xl"><img class="inline mr-2" src="./convert.svg" alt="" /> Convert Code</button>
+                        <div>
+                            <button class="bg-white opacity-50 text-[#381BCB] py-3 px-8 rounded-xl"><img class="inline mr-2" src="./fix.svg" alt="" /> Fix Grammar</button>
+                            <p class="text-[#A998FF] mt-2">Examples of AI for Content</p>
+                        </div>
+                        <button class="bg-white opacity-50 text-[#381BCB] py-3 px-8 rounded-xl"><img class="inline mr-2" src="./todo.svg" alt="" /> Todo</button>
+                        <div>
+                            <img src="./openAI.svg" alt="" />
+                            <p class="text-[#A998FF] mt-2">Powered By</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="bg-white text-[#381BCB] py-3 px-8 rounded-xl mt-24"><img class="inline mr-2" src="./freeSignup.svg" alt="" /> Free Signup</button>
+                        <h1 class="custom-text-gradient text-center mt-[72px] bold-700 ng-gradient">Use the latest <span>AI</span> featurese</h1>
+                        <p class="text-white opacity-75 text-xl">
+                            Start enhancing a range of tasks using AI, from writing emails, code, or <br />
+                            blogs, to rephrasing paragraph’s you just want to reword!
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-2 mt-7">
+                        <div class="bg-white rounded-xl py-4 px-10 flex">
+                            <img class="" src="./message.svg" alt="" />
+                            <div class="ml-7">
+                                <p class="text-slate-300">Content</p>
+                                <h1 class="text-3xl">Explain Code</h1>
+                                <p class="text-slate-300">Explain some code based on the syntax provided</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl py-4 px-10 flex">
+                            <img class="" src="./message.svg" alt="" />
+                            <div class="ml-7">
+                                <p class="text-slate-300">Content</p>
+                                <h1 class="text-3xl">Explain Code</h1>
+                                <p class="text-slate-300">Explain some code based on the syntax provided</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl py-4 px-10 flex">
+                            <img class="" src="./message.svg" alt="" />
+                            <div class="ml-7">
+                                <p class="text-slate-300">Content</p>
+                                <h1 class="text-3xl">Explain Code</h1>
+                                <p class="text-slate-300">Explain some code based on the syntax provided</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl py-4 px-10 flex">
+                            <img class="" src="./message.svg" alt="" />
+                            <div class="ml-7">
+                                <p class="text-slate-300">Content</p>
+                                <h1 class="text-3xl">Explain Code</h1>
+                                <p class="text-slate-300">Explain some code based on the syntax provided</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl py-4 px-10 flex">
+                            <img class="" src="./message.svg" alt="" />
+                            <div class="ml-7">
+                                <p class="text-slate-300">Content</p>
+                                <h1 class="text-3xl">Explain Code</h1>
+                                <p class="text-slate-300">Explain some code based on the syntax provided</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl py-4 px-10 flex">
+                            <img class="" src="./message.svg" alt="" />
+                            <div class="ml-7">
+                                <p class="text-slate-300">Content</p>
+                                <h1 class="text-3xl">Explain Code</h1>
+                                <p class="text-slate-300">Explain some code based on the syntax provided</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
